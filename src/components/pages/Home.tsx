@@ -6,13 +6,13 @@ const Home = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="w-full min-h-screen ">
+    <div className=" min-h-screen ">
       {/* Desktop Navbar */}
-      <div className="flex justify-center items-center bg-[#2e4b5a] ">
-        <nav className="hidden md:flex w-3xl  px-8 py-3 items-center justify-between border-2">
+      <div className="flex justify-center items-center">
+        <nav className="hidden md:flex w-3xl bg-[#1A4981] rounded-4xl p-3 items-center justify-between ">
           {/* Left - Logo and Brand */}
           <WomappLogo />
-
+            
           {/* Center - Navigation Icons */}
           <div className="flex items-center gap-3">
             <button className="w-10 h-10 rounded-lg  flex items-center justify-center transition-colors">
