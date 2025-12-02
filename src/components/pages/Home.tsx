@@ -9,10 +9,10 @@ const Home = () => {
     <div className=" min-h-screen ">
       {/* Desktop Navbar */}
       <div className="flex justify-center items-center">
-        <nav className="hidden md:flex w-3xl bg-[#2E4B5B] rounded-4xl p-1 mt-5 items-center justify-between ">
+        <nav className="hidden md:flex min-w-3xl  bg-[#2E4B5B] rounded-4xl p-1 mt-5 items-center justify-between ">
           {/* Left - Logo and Brand */}
           <WomappLogo />
-            
+
           {/* Center - Navigation Icons */}
           <div className="flex items-center gap-3">
             <button className="w-10 h-10 rounded-lg  flex items-center justify-center transition-colors">
@@ -48,15 +48,15 @@ const Home = () => {
           {/* Right - Theme Toggle and Auth Buttons */}
           <div className="flex items-center gap-3">
             {/* Theme Toggle */}
-            <ThemeToggle/>
+            <ThemeToggle />
 
             {/* Sign Up Button */}
-            <button className="px-5 py-2 bg-transparent border border-[#3A6270] rounded-full text-white text-sm font-medium hover:bg-[#1A4A5C] transition-colors">
+            <button className="px-5 py-2 bg-transparent border border-[#3A6270] rounded-full text-white text-sm font-medium hover:text-[#3afeff] transition-colors">
               Sign up
             </button>
 
             {/* Sign In Button */}
-            <button className="px-5 py-2 bg-[#1A4A5C] rounded-full text-white text-sm font-medium hover:bg-[#225566] transition-colors">
+            <button className="px-5 py-2 bg-[#1A4A5C] rounded-full text-white text-sm font-medium hover:text-[#3afeff] transition-colors">
               Sign in
             </button>
           </div>
@@ -76,22 +76,22 @@ const Home = () => {
 
           <div className="flex justify-evenly items-center gap-2 py-2 pr-2">
             {/* Theme Toggle */}
-           <ThemeToggle/>
+            <ThemeToggle />
 
             {/* Sign In Button */}
-            <button className="px-6 py-2 bg-[#2b4957] border border-[#496F7A] shadow-[inset_-1px_-1px_2px_rgba(255,255,255,0.2),inset_2px_2px_3px_rgba(0,0,0,0.2)] rounded-full text-white text-lg font-medium hover:bg-[#3afeff]">
+            <button className="px-6 py-2 cursor bg-[#2b4957] border border-[#496F7A] shadow-[inset_-1px_-1px_2px_rgba(255,255,255,0.2),inset_2px_2px_3px_rgba(0,0,0,0.2)] rounded-full text-white text-lg font-medium hover:text-[#3afeff]">
               Sign in
             </button>
 
             {/* Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="w-12 h-12 p-6 rounded-full bg-[#2b4957] border border-[#496F7A] flex items-center justify-center shadow-[inset_-1px_-1px_2px_rgba(255,255,255,0.2),inset_2px_2px_3px_rgba(0,0,0,0.2)] transition-colors hover:bg-[#3afeff]"
+              className="w-12 h-12 hover:text-[#3afeff] active:scale-95 rounded-full bg-[#2b4957] border border-[#496F7A] flex items-center justify-center shadow-[inset_-1px_-1px_2px_rgba(255,255,255,0.2),inset_2px_2px_3px_rgba(0,0,0,0.2)] transition-all"
             >
               <div className="space-y-1">
-                <div className="w-6 h-1  bg-white rounded"></div>
-                <div className="w-6 h-1  bg-white rounded"></div>
-                <div className="w-6 h-1  bg-white rounded"></div>
+                <div className="w-6 h-1 bg-white rounded"></div>
+                <div className="w-6 h-1 bg-white rounded"></div>
+                <div className="w-6 h-1 bg-white rounded"></div>
               </div>
             </button>
           </div>
@@ -119,7 +119,7 @@ const Home = () => {
                 Search
               </button>
 
-              <button className="w-full px-6 py-3 bg-[#00F6FF] rounded-full text-[#0D3B48] text-lg font-semibold">
+              <button className="w-full px-6 py-3 bg-[#7cdbdb] rounded-full text-[#0D3B48] text-lg font-semibold">
                 Sign up
               </button>
             </div>
@@ -130,8 +130,12 @@ const Home = () => {
       {/* Demo Content */}
       <div className="flex items-center justify-center h-[calc(100vh-100px)] text-white text-center px-4">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-400">Welcome to Womapp</h1>
-          <p className="text-lg md:text-xl text-gray-400">Resize your browser to see the responsive navbar in action</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-400">
+            Welcome to Womapp
+          </h1>
+          <p className="text-lg md:text-xl text-gray-400">
+            Resize your browser to see the responsive navbar in action
+          </p>
         </div>
       </div>
     </div>

@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useState, ReactNode, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  type ReactNode,
+} from "react";
 
 // Theme type define
 type Theme = "light" | "dark";
@@ -31,7 +37,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-    
+
     // Optional: Keep data-theme if you're using it for other styling
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);

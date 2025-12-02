@@ -9,7 +9,11 @@ const ThemeToggle: React.FC = () => {
     <div
       onClick={toggleTheme}
       className={`w-20 h-10 rounded-full border border-[#496F7A] flex items-center px-1 shadow-inner cursor-pointer relative transition-colors
-        ${theme === "dark" ? "bg-[#3afeff]" : " bg-[#2b4957]"}
+        ${
+          theme === "dark"
+            ? "bg-[#2b4957] shadow-black transition-shadow]"
+            : " bg-[#2b4957]"
+        }
       `}
     >
       {/* Circle */}
@@ -17,7 +21,7 @@ const ThemeToggle: React.FC = () => {
         className={`w-8 h-8 rounded-full flex items-center justify-center shadow transition-transform duration-300
     ${
       theme === "dark"
-        ? "bg-yellow-400 translate-x-10"
+        ? "bg-[#2b4957] shadow-black transition-shadow translate-x-10"
         : "bg-[#2b4957] shadow-black transition-shadow translate-x-0"
     }
   `}
@@ -26,7 +30,7 @@ const ThemeToggle: React.FC = () => {
         {theme === "light" ? (
           <BsSun className="text-[#3afeff] text-lg" />
         ) : (
-          <BsMoonStarsFill className="text-[#0D3B48] text-base" />
+          <BsMoonStarsFill className="text-[#3afeff] text-base" />
         )}
       </div>
     </div>
