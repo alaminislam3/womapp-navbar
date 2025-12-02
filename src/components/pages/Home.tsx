@@ -9,7 +9,7 @@ const Home = () => {
     <div className=" min-h-screen ">
       {/* Desktop Navbar */}
       <div className="flex justify-center items-center">
-        <nav className="hidden md:flex w-3xl bg-[#1A4981] rounded-4xl p-3 items-center justify-between ">
+        <nav className="hidden md:flex w-3xl bg-[#2E4B5B] rounded-4xl p-1 mt-5 items-center justify-between ">
           {/* Left - Logo and Brand */}
           <WomappLogo />
             
@@ -128,12 +128,12 @@ const Home = () => {
       </nav>
 
       {/* Demo Content */}
-      {/* <div className="flex items-center justify-center h-[calc(100vh-100px)] text-white text-center px-4">
+      <div className="flex items-center justify-center h-[calc(100vh-100px)] text-white text-center px-4">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Womapp</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-400">Welcome to Womapp</h1>
           <p className="text-lg md:text-xl text-gray-400">Resize your browser to see the responsive navbar in action</p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
